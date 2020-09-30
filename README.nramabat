@@ -1,0 +1,13 @@
+Leon and I worked on vm_pageout.c and vm_phys.c. 
+
+We had to add to the front or rear of the free list, which we did in vm_phys_free_pages of vm_phys.c
+
+We had to divide by 2 and subtract 1 in vm_pageout_scan_active of vm_pageout.c
+
+We had to move pages to the active list depending on a random value in vm_pageout_scan_active of vm_pageout.c
+
+We also modified the pageout frequency in pageout
+
+We also added print statements for statistics in pageout
+
+We also added sysctl variables to turn on benchmarking mode and to tune the variable from 1-10
